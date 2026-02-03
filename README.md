@@ -50,23 +50,23 @@ Execute notebooks in sequence (Task 1 → Task 6), as each builds on previous ou
 ### Sentiment Distribution (Using TextBlob)
 | Sentiment | Count | Percentage |
 |-----------|-------|------------|
-| Positive  | 975   | 44.5%      |
-| Neutral   | 1,020 | 46.6%      |
+| Positive  | 976   | 44.5%      |
+| Neutral   | 1,021 | 46.6%      |
 | Negative  | 196   | 8.9%       |
 
-### Top 3 Most Positive Employees (Overall)
+### Top 3 Most Positive Employees (Highest Overall Score)
 | Rank | Employee | Total Score |
 |------|----------|-------------|
-| 1 | **rhonda.denton@enron.com** | 50 |
-| 2 | kayne.coulter@enron.com | 61 |
-| 3 | bobette.riner@ipgdirect.com | 72 |
+| 1 | **lydia.delgado@enron.com** | 101         |
+| 2 | john.arnold@enron.com | 97          |
+| 3 | sally.beck@enron.com  | 89          |
 
-### Top 3 Most Negative Employees (Overall)
+### Top 3 Most Negative Employees (Highest Overall Score)
 | Rank | Employee | Total Score |
 |------|----------|-------------|
-| 1 | **bobette.riner@ipgdirect.com** | 72 |
-| 2 | john.arnold@enron.com | 76 |
-| 3 | lydia.delgado@enron.com | 77 |
+| 1 | **rhonda.denton@enron.com** | 50          |
+| 2 | kayne.coulter@enron.com  | 61          |
+| 3 | don.baughman@enron.com | 72          |
 
 ### 🚨 Flight Risk Employees (6 identified)
 Employees who sent 4+ negative emails within any 30-day period:
@@ -140,6 +140,4 @@ Employees who sent 4+ negative emails within any 30-day period:
 - scikit-learn for predictive modeling
 - Pandas, NumPy, Matplotlib, Seaborn for data processing
 
-## 📄 License
 
-This project is for educational/evaluation purposes.

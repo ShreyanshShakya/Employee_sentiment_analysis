@@ -1,7 +1,6 @@
-# %% [markdown]
 # # Employee Sentiment Analysis
 # 
-# This notebook performs comprehensive sentiment analysis on employee email communications.
+# This script performs comprehensive sentiment analysis on employee email communications.
 # 
 # ## Table of Contents
 # 1. Setup & Data Loading
@@ -12,10 +11,10 @@
 # 6. Task 5: Flight Risk Identification
 # 7. Task 6: Predictive Modeling
 
-# %% [markdown]
-# ## 1. Setup & Data Loading
 
-# %%
+# 1. Setup & Data Loading
+
+
 # Import required libraries
 import pandas as pd
 import numpy as np
@@ -31,27 +30,27 @@ sns.set_palette("husl")
 
 print("Libraries imported successfully!")
 
-# %%
+
 # Load the dataset
 df = pd.read_csv('data/test.csv')
 print(f"Dataset loaded: {len(df):,} records")
 print(f"\nColumns: {df.columns.tolist()}")
 print(f"\nData types:\n{df.dtypes}")
 
-# %%
+
 # Preview the data
 df.head()
 
-# %% [markdown]
+
 # ### Data Preprocessing
 
-# %%
+
 # Check for missing values
 print("Missing Values Summary:")
 print(df.isnull().sum())
 print(f"\nTotal missing: {df.isnull().sum().sum()}")
 
-# %%
+
 # Clean and preprocess the data
 # Rename 'from' column to 'employee' for clarity
 df = df.rename(columns={'from': 'employee'})
